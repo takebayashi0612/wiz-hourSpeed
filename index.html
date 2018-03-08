@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+ <meta charset="utf-8">
+ <title>魔導杯・時速計算ツール</title>
+ <script type="text/javascript" src="js/timer.js"></script>
+ <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <h1>魔導杯・時速計算</h1>
+  <h2>参加するトーナメントの１位のポイントを入力後、<br>「計測開始」を押してください</h2>
+  <div id="timer">
+  00:00:00
+  </div>
+  <div class="timer_button">
+    <button id="start_button">計測開始</button>
+    <button id="stop_button">一時中断</button>
+    <button id="reset_button">リセット</button>
+  </div>
+  <div class="result_button">
+    <button id="1st_button">１位</button>
+    <button id="2nd_button">２位</button>
+    <button id="3rd_button">３位</button>
+    <button id="retire_button">リタイア</button>
+  </div>
+  <div id="result_matrix_now">
+    <table>
+      <tr><td id="round_now" rowspan="4" align="center">1回目</td><th id="syukaisuu">周回数</th><th id="kaisuu1st">１位の回数</th><th id="kakutokugoukeiPt">獲得合計Pt</th></tr>
+      <tr><th>0</th><th>0</th><th>0</th></tr>
+      <tr><th id="best_time">ベストタイム</th><th id="worst_time">ワーストタイム</th><th>平均タイム</th></tr>
+      <tr><th id="average_time">00:00:00</th><th>00:00:00</th><th>00:00:00</th></tr>
+    </table>
+  </div>
+  <div class="area_lapTime">
+    ラップタイム
+      <ul id="lapList">
+        <li>1周目 リタイア</li>
+        <li>2週目 00:00:00</li>
+      </ul>
+  </div>
+</body>
+</html>

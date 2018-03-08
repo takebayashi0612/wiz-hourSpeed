@@ -1,0 +1,28 @@
+body{
+  background-color: #f5f3ed;
+}
+
+ #result_matrix_now table, td, th{
+   border-width: 1px;
+   border-style: solid;
+   border-spacing: 0px;
+   border-collapse: collapse;
+   background-color: #F0FFF0;
+   font-size: 25px;
+}
+
+#round_now{
+  width: 80px;
+}
+
+#syukaisuu{
+  width: 150px;
+}
+
+#kaisuu1st{
+  width: 150px
+}
+
+#kakutokugoukeiPt{
+  width: 150px
+}
