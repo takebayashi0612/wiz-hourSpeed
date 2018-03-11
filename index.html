@@ -9,13 +9,12 @@
 <body>
   <h1>魔導杯・時速計算</h1>
   <h2>参加するトーナメントの１位のポイントを入力後、<br>「計測開始」を押してください</h2>
-  <div id="timer">
-  00:00:00
+  <div id="now_time">
   </div>
   <div class="timer_button">
-    <button id="start_button">計測開始</button>
-    <button id="stop_button">一時中断</button>
-    <button id="reset_button">リセット</button>
+    <button id="timer_start_button">計測開始</button>
+    <button id="timer_stop_button">一時中断</button>
+    <button id="timer_start_tournament_button">トーナメント開始</button>
   </div>
   <div class="result_button">
     <button id="1st_button">１位</button>
@@ -26,7 +25,7 @@
   <div id="result_matrix_now">
     <table>
       <tr><td id="round_now" rowspan="4" align="center">1回目</td><th id="syukaisuu">周回数</th><th id="kaisuu1st">１位の回数</th><th id="kakutokugoukeiPt">獲得合計Pt</th></tr>
-      <tr><th>0</th><th>0</th><th>0</th></tr>
+      <tr><th>0</th><th id="count_1st">0</th><th id="sum_point">0</th></tr>
       <tr><th id="best_time">ベストタイム</th><th id="worst_time">ワーストタイム</th><th>平均タイム</th></tr>
       <tr><th id="average_time">00:00:00</th><th>00:00:00</th><th>00:00:00</th></tr>
     </table>
